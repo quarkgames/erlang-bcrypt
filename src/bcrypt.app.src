@@ -4,7 +4,7 @@
   {vsn, git},
   {registered, [bcrypt_sup, bcrypt_nif_worker]},
   {mod, {bcrypt_app, []}},
-  {applications, [kernel, stdlib, crypto]},
+  {applications, [kernel, stdlib, crypto, poolboy]},
   {env, [
          % Default number of 'rounds', defining the hashing complexity
          {default_log_rounds, 12},
